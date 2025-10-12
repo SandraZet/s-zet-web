@@ -61,7 +61,7 @@ body {
     font-weight: 600;
     color: var(--primary-color);
     text-decoration: none;
-    background: linear-gradient(135deg, #06b6d4 0%, #14b8a6 30%, #8b5cf6 70%, #3b82f6 100%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -118,42 +118,17 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(45deg, #fdf2f8, #fff7ed, #f0f9ff, #faf5ff);
+    background: linear-gradient(45deg, #ec4899 0%, #f97316 30%, #f0f9ff 60%, #faf5ff 100%);
     background-size: 400% 400%;
-    animation: gradientShift 8s ease infinite;
+    animation: gradientShift 20s ease infinite;
     padding-top: 70px;
     position: relative;
     overflow: hidden;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(ellipse at top left, rgba(236, 72, 153, 0.1) 0%, transparent 50%),
-                radial-gradient(ellipse at top right, rgba(249, 115, 22, 0.1) 0%, transparent 50%),
-                radial-gradient(ellipse at bottom left, rgba(236, 72, 153, 0.05) 0%, transparent 50%);
-    animation: floatElements 12s ease-in-out infinite;
-}
 
-/* Simple Subtle Pattern - Calm & Professional */
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    z-index: 1;
-    background-image: 
-        radial-gradient(circle at 20% 30%, rgba(236, 72, 153, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(249, 115, 22, 0.04) 0%, transparent 50%);
-    background-size: 800px 800px, 600px 600px;
-}
+
+
 
 /* Background Image Overlay */
 .hero-bg-overlay {
@@ -164,34 +139,18 @@ body {
     height: 100%;
     pointer-events: none;
     z-index: 1;
-    background-image: 
-        linear-gradient(to right, transparent 0%, transparent 50%, white 50%, white 100%), 
-        url('img/background5.jpg');
+    background-image: url('img/background6.jpg');
     background-size: cover;
-    background-position: center; 
-    background-size: cover; 
-    background-position: center left; 
+    background-position: center;
+    opacity: 0.5;
 }
 
 /* Animated Gradient for Text Area */
-.hero-gradient-overlay {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 1;
-    background: linear-gradient(45deg, #fdf2f8, #fff7ed, #f0f9ff, #faf5ff);
-    background-size: 400% 400%;
-    animation: gradientShift 8s ease infinite;
-    opacity: 0.8;
-}
 
 /* Floating Code Icon */
 .floating-code {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 3.5rem;
     background: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;
@@ -225,21 +184,22 @@ body {
 }
 
 .hero-container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
     z-index: 2;
     height: 100%;
 }
 
 .hero-content {
-    width: 50%;
-    padding-left: 2rem;
-    text-align: left;
+    width: 100%;
+    padding: 0;
+    text-align: center;
 }
 
 .hero-title {
@@ -325,7 +285,7 @@ body {
 }
 
 .hero-placeholder i {
-    background: linear-gradient(135deg, #06b6d4 0%, #14b8a6 30%, #8b5cf6 70%, #3b82f6 100%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -348,7 +308,7 @@ section {
     font-weight: 700;
     text-align: center;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #06b6d4 0%, #14b8a6 30%, #8b5cf6 70%, #3b82f6 100%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -541,7 +501,7 @@ section {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: linear-gradient(135deg, #06b6d4 0%, #14b8a6 30%, #8b5cf6 70%, #3b82f6 100%);
+    background: var(--gradient);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
