@@ -139,9 +139,19 @@ body {
     background-image: url('img/background6.jpg'); /* Passe den Dateinamen ggf. an */
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    opacity: 0;
     z-index: 1;
     pointer-events: none;
+    animation: heroBgFadeIn 1.5s ease 0.2s forwards;
+}
+
+@keyframes heroBgFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.25;
+    }
 }
 
 
