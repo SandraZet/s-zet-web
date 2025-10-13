@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>s.Zet Web - Sandra Zänglein | Webdesignerin & App-Entwicklerin</title>
+    <meta name="description" content="Individuelle, moderne Websites & Apps von Sandra Zänglein – Webdesignerin & App-Entwicklerin aus Leidenschaft. Persönlich, klar, authentisch. Wien, Niederösterreich, Burgenland.">
+    <meta name="keywords" content="Webdesign, App-Entwicklung, Sandra Zänglein, moderne Websites, individuelle Websites, Freelancer, Wien, Niederösterreich, Burgenland, persönliche Beratung, digitale Visitenkarte, responsive Design, SEO, DSGVO, authentisch, klar, Webdesignerin, Webentwicklung, kleine Unternehmen, Selbstständige, Portfolio">
+    <!-- Für Suchmaschinen: Sitemap sollte unter /sitemap.xml bereitgestellt werden -->
+    <meta property="og:title" content="s.Zet Web - Sandra Zänglein | Webdesignerin & App-Entwicklerin">
+    <meta property="og:description" content="Individuelle, moderne Websites & Apps von Sandra Zänglein – Webdesignerin & App-Entwicklerin aus Leidenschaft. Persönlich, klar, authentisch.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sandrazet.de/">
+    <meta property="og:image" content="https://sandrazet.de/img/background6.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="s.Zet Web - Sandra Zänglein">
+    <meta name="twitter:description" content="Individuelle, moderne Websites & Apps von Sandra Zänglein – Webdesignerin & App-Entwicklerin aus Leidenschaft.">
+    <meta name="twitter:image" content="https://sandrazet.de/img/background6.jpg">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Hauptnavigation">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#home">s.Zet Web</a>
@@ -23,20 +36,22 @@
                 <a href="#contact" class="nav-link">Kontakt</a>
             </div>
             <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="sr-only">Menü öffnen</span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <!-- Background Image -->
-        <div class="hero-bg-image"></div>
-        <div class="hero-gradient-overlay"></div>
+    <!-- Background Image -->
+    <div class="hero-bg-image" role="img" aria-label="Abstraktes farbiges Hintergrundbild"></div>
+    <div class="hero-gradient-overlay" aria-hidden="true"></div>
         
-        <div class="cube-container cube3">
+    <main id="main" role="main">
+    <div class="cube-container cube3">
             <div class="cube">
                 <div class="face front"></div>
                 <div class="face back"></div>
@@ -55,7 +70,8 @@
                 <p class="hero-subtitle">Webdesignerin & App-Entwicklerin</p>
                 <p class="hero-description">
                     Ich gestalte individuelle, moderne Websites – technisch sauber, leicht zu bedienen und optisch klar.<br>
-                    Für alle, die keine riesige Agentur brauchen, sondern einfach eine schöne, funktionierende digitale Visitenkarte.
+                    Für alle, die keine riesige Agentur brauchen, sondern einfach eine schöne, funktionierende digitale Visitenkarte.<br>
+                    
                 </p>
                 <div class="hero-buttons">
                     <div class="floating-code">
@@ -66,6 +82,7 @@
         </div>
     </section>
 
+        </main>
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
@@ -73,12 +90,14 @@
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-intro">
-                        Ich kombiniere Design, Technik und Struktur. Mein Hintergrund liegt in Sozialarbeit – also weiß ich, 
-                        wie wichtig echte Kommunikation ist.
+                         Ich mag es klar, ruhig und strukturiert – mit Platz für Ideen und Humor.  
+    Durch meinen Hintergrund in der Sozialarbeit habe ich gelernt, zuzuhören, offen zu bleiben und gemeinsam Lösungen zu finden.
                     </p>
                     <p>
-                        Heute setze ich Websites und kleine Apps um, die nicht nur gut aussehen, sondern einfach funktionieren.<br>
-                        Egal ob Onepager, kleine Unternehmensseite oder erste App – ich halte es unkompliziert, transparent und persönlich.
+                        Heute setze ich Websites und kleine Apps um, die leicht aussehen und einfach funktionieren.  
+    Ich arbeite unkompliziert, mit Freude und so lange, bis es wirklich passt – ohne Agenturgehabe, aber mit ganzem Einsatz.<br>
+    Besonders gerne für Selbstständige und kleine Unternehmen aus Wien, Niederösterreich und dem Burgenland, 
+    die etwas Eigenes aufbauen oder neu starten.
                     </p>
                 </div>
                 <div class="skills">
@@ -371,6 +390,70 @@
                     <div class="footer-links">
                         <a href="#impressum" class="footer-link">Impressum</a>
                         <a href="#datenschutz" class="footer-link">Datenschutz</a>
+                        <a href="#barrierefreiheit" class="footer-link">Barrierefreiheit</a>
+    <!-- Barrierefreiheit Modal -->
+    <div id="barrierefreiheit" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Barrierefreiheitserklärung</h2>
+                        <div class="legal-content">
+                                
+                                
+                                <p>Diese Website wurde nach den Richtlinien der <strong>Web Content Accessibility Guidelines (WCAG) 2.1 Level AA</strong> entwickelt, um allen Menschen einen gleichberechtigten Zugang zu ermöglichen.</p>
+
+                                <h3>Implementierte Barrierefreiheits-Features</h3>
+
+                                <h4>Navigation und Bedienung</h4>
+                                <ul>
+                                    <li><strong>Tastaturnavigation:</strong> Vollständige Navigation mit Tab, Enter und Pfeiltasten</li>
+                                    <li><strong>Skip-Links:</strong> Direkte Navigation zum Hauptinhalt</li>
+                                    <li><strong>Fokus-Indikatoren:</strong> Sichtbare Hervorhebung des aktuellen Elements</li>
+                                    <li><strong>Konsistente Navigation:</strong> Einheitliche Menüstruktur auf allen Seiten</li>
+                                </ul>
+
+                                <h4>Visuelles Design</h4>
+                                <ul>
+                                    <li><strong>Hoher Kontrast:</strong> Mindestens 4.5:1 für normalen Text</li>
+                                    <li><strong>Skalierbare Schrift:</strong> Bis 200% vergrößerbar ohne Funktionsverlust</li>
+                                    <li><strong>Responsive Design:</strong> Optimiert für alle Bildschirmgrößen</li>
+                                    <li><strong>Reduzierte Bewegung:</strong> Respektiert prefers-reduced-motion Einstellungen</li>
+                                </ul>
+
+                                <h4>Screen Reader Unterstützung</h4>
+                                <ul>
+                                    <li><strong>Semantisches HTML:</strong> Korrekte Verwendung von Überschriften und Landmarks</li>
+                                    <li><strong>Alt-Texte:</strong> Beschreibende Texte für alle Bilder</li>
+                                    <li><strong>ARIA-Labels:</strong> Zusätzliche Kontextinformationen für Screenreader</li>
+                                    <li><strong>Logische Struktur:</strong> Sinnvolle Reihenfolge der Inhalte</li>
+                                </ul>
+
+                                <h3>Getestete Technologien</h3>
+
+                                <h4>Browser</h4>
+                                <ul>
+                                    <li>Chrome (aktuellste Version)</li>
+                                    <li>Firefox (aktuellste Version)</li>
+                                    <li>Safari (aktuellste Version)</li>
+                                    <li>Microsoft Edge (aktuellste Version)</li>
+                                </ul>
+
+                                <h4>Assistive Technologien</h4>
+                                <ul>
+                                    <li>NVDA Screenreader (Windows)</li>
+                                    <li>JAWS Screenreader (Windows)</li>
+                                    <li>VoiceOver (macOS/iOS)</li>
+                                    <li>TalkBack (Android)</li>
+                                </ul>
+
+                                <h3>Kontinuierliche Verbesserung</h3>
+                                <p>Ich bin bestrebt, die Barrierefreiheit meiner Website kontinuierlich zu verbessern. Die Website wird regelmäßig mit automatisierten Tools und manuellen Tests überprüft.</p>
+
+                                <h3>Feedback und Unterstützung</h3>
+                                <p>Sollten Sie auf Barrieren stoßen oder Verbesserungsvorschläge haben, kontaktieren Sie mich gerne:<br>
+                                <a href="mailto:sandra@sandrazet.de">sandra@sandrazet.de</a></p>
+                        </div>
+        </div>
+    </div>
                     </div>
                 </div>
             </div>

@@ -308,8 +308,10 @@ function typeWriter(element, text, speed = 100) {
 document.addEventListener('DOMContentLoaded', () => {
     const impressumModal = document.getElementById('impressum');
     const datenschutzModal = document.getElementById('datenschutz');
+    const barrierefreiheitModal = document.getElementById('barrierefreiheit');
     const impressumLink = document.querySelector('a[href="#impressum"]');
     const datenschutzLink = document.querySelector('a[href="#datenschutz"]');
+    const barrierefreiheitLink = document.querySelector('a[href="#barrierefreiheit"]');
     const closeBtns = document.querySelectorAll('.close');
 
     // Open modals
@@ -329,20 +331,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (barrierefreiheitLink) {
+        barrierefreiheitLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            barrierefreiheitModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+    }
+
     // Close modals
     closeBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             impressumModal.style.display = 'none';
             datenschutzModal.style.display = 'none';
+            barrierefreiheitModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         });
     });
 
     // Close modal when clicking outside
     window.addEventListener('click', (e) => {
-        if (e.target === impressumModal || e.target === datenschutzModal) {
+        if (e.target === impressumModal || e.target === datenschutzModal || e.target === barrierefreiheitModal) {
             impressumModal.style.display = 'none';
             datenschutzModal.style.display = 'none';
+            barrierefreiheitModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
     });
@@ -352,6 +364,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Escape') {
             impressumModal.style.display = 'none';
             datenschutzModal.style.display = 'none';
+            barrierefreiheitModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
     });
