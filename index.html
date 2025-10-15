@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <link rel="canonical" href="https://sandrazet.de/">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>s.Zet Web - Sandra Zänglein | Webdesignerin & App-Entwicklerin</title>
@@ -16,6 +20,9 @@
     <meta name="twitter:title" content="s.Zet Web - Sandra Zänglein">
     <meta name="twitter:description" content="Individuelle, moderne Websites & Apps von Sandra Zänglein – Webdesignerin & App-Entwicklerin aus Leidenschaft.">
     <meta name="twitter:image" content="https://sandrazet.de/img/background6.jpg">
+    <link rel="preload" href="./fonts/Montserrat/static/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./fonts/Montserrat/static/Montserrat-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./fonts/Montserrat/static/Montserrat-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -35,54 +42,35 @@
                 <a href="#packages" class="nav-link">Angebot</a>
                 <a href="#contact" class="nav-link">Kontakt</a>
             </div>
-            <div class="nav-toggle">
+            <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-menu">
                 <span class="bar" aria-hidden="true"></span>
                 <span class="bar" aria-hidden="true"></span>
                 <span class="bar" aria-hidden="true"></span>
-                <span class="sr-only">Menü öffnen</span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-    <!-- Background Image -->
-    <div class="hero-bg-image" role="img" aria-label="Abstraktes farbiges Hintergrundbild"></div>
-    <div class="hero-gradient-overlay" aria-hidden="true"></div>
-        
     <main id="main" role="main">
-    <div class="cube-container cube3">
-            <div class="cube">
-                <div class="face front"></div>
-                <div class="face back"></div>
-                <div class="face left"></div>
-                <div class="face right"></div>
-                <div class="face top"></div>
-                <div class="face bottom"></div>
-            </div>
-        </div>
-        
-
-        
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, ich bin <span class="highlight">Sandra</span></h1>
-                <p class="hero-subtitle">Webdesignerin & App-Entwicklerin</p>
-                <p class="hero-description">
-                    Ich gestalte individuelle, moderne Websites – technisch sauber, leicht zu bedienen und optisch klar.<br>
-                    Für alle, die keine riesige Agentur brauchen, sondern einfach eine schöne, funktionierende digitale Visitenkarte.<br>
-                    
-                </p>
-                <div class="hero-buttons">
-                    <div class="floating-code">
-                        <i class="fas fa-code"></i>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg-image" role="img" aria-label="Abstraktes farbiges Hintergrundbild"></div>
+            <div class="hero-gradient-overlay" aria-hidden="true"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Hi, ich bin <span class="highlight">Sandra</span></h1>
+                    <p class="hero-subtitle">Webdesignerin & App-Entwicklerin</p>
+                    <p class="hero-description">
+                        Ich gestalte individuelle, moderne Websites – technisch sauber, leicht zu bedienen und optisch klar.<br>
+                        Für alle, die keine riesige Agentur brauchen, sondern einfach eine schöne, funktionierende digitale Visitenkarte.<br>
+                    </p>
+                    <div class="hero-buttons">
+                        <div class="floating-code">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-        </main>
+        </section>
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
@@ -94,7 +82,7 @@
     Durch meinen Hintergrund in der Sozialarbeit habe ich gelernt, zuzuhören, offen zu bleiben und gemeinsam Lösungen zu finden.
                     </p>
                     <p>
-                        Heute setze ich Websites und kleine Apps um, die leicht aussehen und einfach funktionieren.  
+                        Heute setze ich Websites und kleine Apps um, die gut aussehen und einfach funktionieren.  
     Ich arbeite unkompliziert, mit Freude und so lange, bis es wirklich passt – ohne Agenturgehabe, aber mit ganzem Einsatz.<br>
     Besonders gerne für Selbstständige und kleine Unternehmen aus Wien, Niederösterreich und dem Burgenland, 
     die etwas Eigenes aufbauen oder neu starten.
@@ -162,7 +150,7 @@
         <div class="container">
             <h2 class="section-title">Wie ich arbeite</h2>
             <div class="work-content">
-                <p class="work-intro">Ich arbeite direkt, klar und ohne Umwege.</p>
+                <p class="work-intro">Ich arbeite engagiert, freundlich und strukturiert.</p>
                 
                 <div class="work-steps">
                     <div class="work-step">
@@ -218,12 +206,12 @@
                         </div>
                         <h3>Starter</h3>
                         <div class="package-price">
-                            <span class="price">ab €799</span>
+                            <span class="price">ab €899</span>
                             <span class="period">einmalig</span>
                         </div>
                     </div>
                     <div class="package-content">
-                        <p class="package-description">Onepager oder kleine Website</p>
+                        <p class="package-description">Onepager</p>
                         <ul class="package-features">
                             <li><i class="fas fa-check"></i> Bis zu 5 Sektionen</li>
                             <li><i class="fas fa-check"></i> Responsive Design</li>
@@ -249,12 +237,12 @@
                         </div>
                         <h3>Business</h3>
                         <div class="package-price">
-                            <span class="price">ab €1.799</span>
+                            <span class="price">ab €1.899</span>
                             <span class="period">einmalig</span>
                         </div>
                     </div>
                     <div class="package-content">
-                        <p class="package-description">Mehrseitige Website mit CMS</p>
+                        <p class="package-description">Mehrseitige Website</p>
                         <ul class="package-features">
                             <li><i class="fas fa-check"></i> Bis zu 10 Seiten</li>
                             <li><i class="fas fa-check"></i> CMS (Webflow oder WordPress)</li>
@@ -279,16 +267,15 @@
                         </div>
                         <h3>Premium / Individuell</h3>
                         <div class="package-price">
-                            <span class="price">Preis</span>
-                            <span class="period">auf Anfrage</span>
+                            <span class="price">Preis auf Anfrage</span>
+                            <span class="period"></span>
                         </div>
                     </div>
                     <div class="package-content">
                         <p class="package-description">Für individuelle Anforderungen</p>
                         <ul class="package-features">
                             <li><i class="fas fa-check"></i> E-Commerce</li>
-                            <li><i class="fas fa-check"></i> Mitgliederbereich</li>
-                            <li><i class="fas fa-check"></i> App-Anbindung</li>
+                            <li><i class="fas fa-check"></i> Barrierefreiheit</li>
                             <li><i class="fas fa-check"></i> Mehrsprachigkeit</li>
                             <li><i class="fas fa-check"></i> Performance-Optimierung</li>
                         </ul>
@@ -337,42 +324,53 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Kontakt</h2>
-            <p class="section-subtitle">Lassen Sie uns zusammenarbeiten!</p>
+            
             
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Lass uns über dein Projekt sprechen.</h3>
+                    
                     <p>Schreib mir kurz, was du brauchst – ich melde mich mit einem Vorschlag und einem klaren Preis.</p>
                     
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>sandra.zaenglein@email.de</span>
+                        <span>info@szet.com</span>
                     </div>
                     
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>+49 123 456 789</span>
+                        <span>+43 660 5744 151</span>
                     </div>
                     
-                    <div class="social-links">
+                    <!-- <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    </div>
+                    </div> -->
                 </div>
                 
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Ihr Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Ihre E-Mail" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Ihre Nachricht" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Nachricht senden</button>
-                </form>
+                
+                    <form class="contact-form" action="https://formspree.io/f/xgvnpngl" method="POST" aria-label="Kontaktformular">
+    <div class="form-group">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+    </div>
+    <div class="form-group">
+        <label for="email">E-Mail*</label>
+        <input type="email" id="email" name="_replyto" required autocomplete="email">
+    </div>
+    <div class="form-group">
+        <label for="message">Nachricht*</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <!-- Optional: Betreff und Redirect -->
+    <input type="hidden" name="_subject" value="Neue Kontaktanfrage von deiner Website">
+    <input type="hidden" name="_next" value="https://deine-website.com/danke.html">
+
+    <button type="submit" class="btn btn-primary">Nachricht senden</button>
+    <p class="form-hint">* Pflichtfeld. Ihre Daten werden über Formspree verarbeitet.</p>
+</form>
+                
             </div>
         </div>
     </section>
@@ -391,69 +389,7 @@
                         <a href="#impressum" class="footer-link">Impressum</a>
                         <a href="#datenschutz" class="footer-link">Datenschutz</a>
                         <a href="#barrierefreiheit" class="footer-link">Barrierefreiheit</a>
-    <!-- Barrierefreiheit Modal -->
-    <div id="barrierefreiheit" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Barrierefreiheitserklärung</h2>
-                        <div class="legal-content">
-                                
-                                
-                                <p>Diese Website wurde nach den Richtlinien der <strong>Web Content Accessibility Guidelines (WCAG) 2.1 Level AA</strong> entwickelt, um allen Menschen einen gleichberechtigten Zugang zu ermöglichen.</p>
-
-                                <h3>Implementierte Barrierefreiheits-Features</h3>
-
-                                <h4>Navigation und Bedienung</h4>
-                                <ul>
-                                    <li><strong>Tastaturnavigation:</strong> Vollständige Navigation mit Tab, Enter und Pfeiltasten</li>
-                                    <li><strong>Skip-Links:</strong> Direkte Navigation zum Hauptinhalt</li>
-                                    <li><strong>Fokus-Indikatoren:</strong> Sichtbare Hervorhebung des aktuellen Elements</li>
-                                    <li><strong>Konsistente Navigation:</strong> Einheitliche Menüstruktur auf allen Seiten</li>
-                                </ul>
-
-                                <h4>Visuelles Design</h4>
-                                <ul>
-                                    <li><strong>Hoher Kontrast:</strong> Mindestens 4.5:1 für normalen Text</li>
-                                    <li><strong>Skalierbare Schrift:</strong> Bis 200% vergrößerbar ohne Funktionsverlust</li>
-                                    <li><strong>Responsive Design:</strong> Optimiert für alle Bildschirmgrößen</li>
-                                    <li><strong>Reduzierte Bewegung:</strong> Respektiert prefers-reduced-motion Einstellungen</li>
-                                </ul>
-
-                                <h4>Screen Reader Unterstützung</h4>
-                                <ul>
-                                    <li><strong>Semantisches HTML:</strong> Korrekte Verwendung von Überschriften und Landmarks</li>
-                                    <li><strong>Alt-Texte:</strong> Beschreibende Texte für alle Bilder</li>
-                                    <li><strong>ARIA-Labels:</strong> Zusätzliche Kontextinformationen für Screenreader</li>
-                                    <li><strong>Logische Struktur:</strong> Sinnvolle Reihenfolge der Inhalte</li>
-                                </ul>
-
-                                <h3>Getestete Technologien</h3>
-
-                                <h4>Browser</h4>
-                                <ul>
-                                    <li>Chrome (aktuellste Version)</li>
-                                    <li>Firefox (aktuellste Version)</li>
-                                    <li>Safari (aktuellste Version)</li>
-                                    <li>Microsoft Edge (aktuellste Version)</li>
-                                </ul>
-
-                                <h4>Assistive Technologien</h4>
-                                <ul>
-                                    <li>NVDA Screenreader (Windows)</li>
-                                    <li>JAWS Screenreader (Windows)</li>
-                                    <li>VoiceOver (macOS/iOS)</li>
-                                    <li>TalkBack (Android)</li>
-                                </ul>
-
-                                <h3>Kontinuierliche Verbesserung</h3>
-                                <p>Ich bin bestrebt, die Barrierefreiheit meiner Website kontinuierlich zu verbessern. Die Website wird regelmäßig mit automatisierten Tools und manuellen Tests überprüft.</p>
-
-                                <h3>Feedback und Unterstützung</h3>
-                                <p>Sollten Sie auf Barrieren stoßen oder Verbesserungsvorschläge haben, kontaktieren Sie mich gerne:<br>
-                                <a href="mailto:sandra@sandrazet.de">sandra@sandrazet.de</a></p>
-                        </div>
-        </div>
-    </div>
+    <!-- Modale werden ans Ende des Body verschoben -->
                     </div>
                 </div>
             </div>
@@ -545,7 +481,7 @@
                 
                 <h3>4. Datenerfassung auf dieser Website</h3>
                 <h4>Kontaktformular</h4>
-                <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.</p>
+                <p>Wenn Sie das Kontaktformular nutzen, werden Ihre Angaben (Name, E-Mail, Nachricht) über den externen Dienst <strong>Formspree</strong> an uns übermittelt. Die Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht dauerhaft gespeichert. Weitere Informationen finden Sie in der <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener">Datenschutzerklärung von Formspree</a>.</p>
                 
                 <h4>Anfrage per E-Mail, Telefon oder Telefax</h4>
                 <p>Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet.</p>
@@ -557,5 +493,140 @@
     </div>
 
     <script src="script.js"></script>
+</footer>
+
+<!-- Barrierefreiheit Modal -->
+<div id="barrierefreiheit" class="modal" role="dialog" aria-modal="true" aria-labelledby="barrierefreiheit-title">
+    <div class="modal-content">
+        <span class="close" tabindex="0" role="button" aria-label="Schließen">&times;</span>
+        <h2 id="barrierefreiheit-title">Barrierefreiheitserklärung</h2>
+        <div class="legal-content">
+            <p>Diese Website wurde nach den Richtlinien der <strong>Web Content Accessibility Guidelines (WCAG) 2.1 Level AA</strong> entwickelt, um allen Menschen einen gleichberechtigten Zugang zu ermöglichen.</p>
+            <h3>Implementierte Barrierefreiheits-Features</h3>
+            <h4>Navigation und Bedienung</h4>
+            <ul>
+                <li><strong>Tastaturnavigation:</strong> Vollständige Navigation mit Tab, Enter und Pfeiltasten</li>
+                <li><strong>Skip-Links:</strong> Direkte Navigation zum Hauptinhalt</li>
+                <li><strong>Fokus-Indikatoren:</strong> Sichtbare Hervorhebung des aktuellen Elements</li>
+                <li><strong>Konsistente Navigation:</strong> Einheitliche Menüstruktur auf allen Seiten</li>
+            </ul>
+            <h4>Visuelles Design</h4>
+            <ul>
+                <li><strong>Hoher Kontrast:</strong> Mindestens 4.5:1 für normalen Text</li>
+                <li><strong>Skalierbare Schrift:</strong> Bis 200% vergrößerbar ohne Funktionsverlust</li>
+                <li><strong>Responsive Design:</strong> Optimiert für alle Bildschirmgrößen</li>
+                <li><strong>Reduzierte Bewegung:</strong> Respektiert prefers-reduced-motion Einstellungen</li>
+            </ul>
+            <h4>Screen Reader Unterstützung</h4>
+            <ul>
+                <li><strong>Semantisches HTML:</strong> Korrekte Verwendung von Überschriften und Landmarks</li>
+                <li><strong>Alt-Texte:</strong> Beschreibende Texte für alle Bilder</li>
+                <li><strong>ARIA-Labels:</strong> Zusätzliche Kontextinformationen für Screenreader</li>
+                <li><strong>Logische Struktur:</strong> Sinnvolle Reihenfolge der Inhalte</li>
+            </ul>
+            <h3>Getestete Technologien</h3>
+            <h4>Browser</h4>
+            <ul>
+                <li>Chrome (aktuellste Version)</li>
+                <li>Firefox (aktuellste Version)</li>
+                <li>Safari (aktuellste Version)</li>
+                <li>Microsoft Edge (aktuellste Version)</li>
+            </ul>
+            <h4>Assistive Technologien</h4>
+            <ul>
+                <li>NVDA Screenreader (Windows)</li>
+                <li>JAWS Screenreader (Windows)</li>
+                <li>VoiceOver (macOS/iOS)</li>
+                <li>TalkBack (Android)</li>
+            </ul>
+            <h3>Kontinuierliche Verbesserung</h3>
+            <p>Ich bin bestrebt, die Barrierefreiheit meiner Website kontinuierlich zu verbessern. Die Website wird regelmäßig mit automatisierten Tools und manuellen Tests überprüft.</p>
+            <h3>Feedback und Unterstützung</h3>
+            <p>Sollten Sie auf Barrieren stoßen oder Verbesserungsvorschläge haben, kontaktieren Sie mich gerne:<br>
+            <a href="mailto:sandra@sandrazet.de">sandra@sandrazet.de</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- Impressum Modal -->
+<div id="impressum" class="modal" role="dialog" aria-modal="true" aria-labelledby="impressum-title">
+    <div class="modal-content">
+        <span class="close" tabindex="0" role="button" aria-label="Schließen">&times;</span>
+        <h2 id="impressum-title">Impressum</h2>
+        <div class="legal-content">
+            <h3>Angaben gemäß § 5 TMG</h3>
+            <p>
+                Sandra Zänglein<br>
+                s.Zet Web<br>
+                [Ihre Adresse]<br>
+                [PLZ Ort]
+            </p>
+            <h3>Kontakt</h3>
+            <p>
+                Telefon: [Ihre Telefonnummer]<br>
+                E-Mail: sandra.zaenglein@email.de
+            </p>
+            <h3>Berufsbezeichnung und berufsrechtliche Regelungen</h3>
+            <p>
+                Berufsbezeichnung: Webdesignerin & App-Entwicklerin<br>
+                Verliehen durch: Deutschland
+            </p>
+            <h3>EU-Streitschlichtung</h3>
+            <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+            <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a><br>
+            Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+            <h3>Verbraucher­streit­beilegung/Universal­schlichtungs­stelle</h3>
+            <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+            <h3>Haftung für Inhalte</h3>
+            <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+            <h3>Haftung für Links</h3>
+            <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+            <h3>Urheberrecht</h3>
+            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Datenschutz Modal -->
+<div id="datenschutz" class="modal" role="dialog" aria-modal="true" aria-labelledby="datenschutz-title">
+    <div class="modal-content">
+        <span class="close" tabindex="0" role="button" aria-label="Schließen">&times;</span>
+        <h2 id="datenschutz-title">Datenschutzerklärung</h2>
+        <div class="legal-content">
+            <h3>1. Datenschutz auf einen Blick</h3>
+            <h4>Allgemeine Hinweise</h4>
+            <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+            <h4>Datenerfassung auf dieser Website</h4>
+            <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong></p>
+            <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
+            <p><strong>Wie erfassen wir Ihre Daten?</strong></p>
+            <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
+            <h3>2. Hosting</h3>
+            <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
+            <h4>Externes Hosting</h4>
+            <p>Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert.</p>
+            <h3>3. Allgemeine Hinweise und Pflichtinformationen</h3>
+            <h4>Datenschutz</h4>
+            <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+            <h4>Hinweis zur verantwortlichen Stelle</h4>
+            <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+            <p>
+                Sandra Zänglein<br>
+                s.Zet Web<br>
+                [Ihre Adresse]<br>
+                [PLZ Ort]<br><br>
+                Telefon: [Ihre Telefonnummer]<br>
+                E-Mail: sandra.zaenglein@email.de
+            </p>
+            <h3>4. Datenerfassung auf dieser Website</h3>
+            <h4>Kontaktformular</h4>
+            <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.</p>
+            <h4>Anfrage per E-Mail, Telefon oder Telefax</h4>
+            <p>Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet.</p>
+            <h3>5. Ihre Rechte</h3>
+            <p>Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung, Sperrung oder Löschung dieser Daten zu verlangen.</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>

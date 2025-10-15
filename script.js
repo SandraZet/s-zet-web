@@ -69,30 +69,37 @@ window.addEventListener('scroll', () => {
 });
 
 // Contact form handling
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
-    // Get form data
+
     const formData = new FormData(contactForm);
+    const email = formData.get('_replyto');
     const name = formData.get('name');
-    const email = formData.get('email');
     const message = formData.get('message');
-    
-    // Simple validation
-    if (!name || !email || !message) {
-        showNotification('Bitte füllen Sie alle Felder aus.', 'error');
+
+    if (!name || !email || !message || !isValidEmail(email)) {
+        showNotification('Bitte füllen Sie alle Felder korrekt aus.', 'error');
         return;
     }
-    
-    if (!isValidEmail(email)) {
-        showNotification('Bitte geben Sie eine gültige E-Mail-Adresse ein.', 'error');
-        return;
+
+    try {
+        const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            showNotification('Vielen Dank für Ihre Nachricht! Ich melde mich.', 'success');
+            contactForm.reset();
+        } else {
+            showNotification('Fehler beim Senden, bitte versuchen Sie es später.', 'error');
+        }
+    } catch (error) {
+        showNotification('Fehler beim Senden, bitte versuchen Sie es später.', 'error');
     }
-    
-    // Simulate form submission (replace with actual form handler)
-    showNotification('Vielen Dank für Ihre Nachricht! Ich melde mich bald bei Ihnen.', 'success');
-    contactForm.reset();
 });
+
 
 // Email validation helper
 function isValidEmail(email) {
