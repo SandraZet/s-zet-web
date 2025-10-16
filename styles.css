@@ -356,6 +356,7 @@ section {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
+    margin-top: 0rem;
     margin-bottom: 1rem;
     background: var(--gradient);
     -webkit-background-clip: text;
@@ -524,6 +525,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-bottom: 4rem;
+    column-gap: 3rem;
 }
 
 .package-item {
@@ -618,7 +620,7 @@ section {
 }
 
 .package-features li {
-    padding: 0.5rem 0;
+    padding: 0.4rem 0;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -1220,4 +1222,18 @@ section {
     .skills-grid {
         grid-template-columns: 1fr;
     }
+}
+
+#blitz .blitz-conditions ul {
+  /* Beispiel-Styles */
+  list-style-type: disc;
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  color: #e52e71; /* z.B. rosa */
+}
+
+#blitz .blitz-conditions ul li {
+  margin-bottom: 0.5em;
+  /* weitere Styles */
 }
